@@ -23,10 +23,10 @@ public class InitDB {
         horeja.setName("Horeja Cham");
 
         Student abc = new Student();
-        horeja.setName("Alhagie Bai Cham");
+        abc.setName("Alhagie Bai Cham");
 
         Student ebrahim = new Student();
-        horeja.setName("Ebrahim Cham");
+        ebrahim.setName("Ebrahim Cham");
 
         List<Student> students = List.of(horeja, abc, ebrahim);
         studentRepository.saveAll(students);

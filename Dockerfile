@@ -4,7 +4,7 @@ FROM gradle:7.4.0-jdk17 AS builder
 WORKDIR /app
 
 COPY --chown=gradle:gradle . /app
-RUN gradle build --no-daemon -x test
+RUN gradle clean build --no-daemon -x test
 
 # RUN stage
 FROM eclipse-temurin:17
