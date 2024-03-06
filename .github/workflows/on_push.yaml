@@ -9,7 +9,9 @@ jobs:
     environment: sb-postgre-docker
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Setup Docker
         uses: docker/setup-buildx-action@v3
 
