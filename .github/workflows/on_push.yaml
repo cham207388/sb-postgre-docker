@@ -6,8 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: sb-postgre-docker
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
